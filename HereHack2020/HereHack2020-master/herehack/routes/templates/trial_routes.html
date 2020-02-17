@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: #ffa64d;
+            }
+            li
+            {
+                background-color: #cce5ff;
+                margin-left: 80px;
+                margin-top: 50px
+            }
+            h2{
+                margin-left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Unfavourable weather for electric vehicles and to-be avoided cities</h2>
+        <ul>
+            {% for city in cities %}
+                <li>{{ city }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

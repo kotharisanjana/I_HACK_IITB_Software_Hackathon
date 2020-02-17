@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Help Page</title>
+        <style>
+            .button {
+              background-color: #FF0000; 
+              border: none;
+              color: white;
+              padding: 20px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+            }
+            
+            .button4 {border-radius: 12px;
+                        margin-left: 650px;
+                        margin-top: 50px;}
+
+            table, th, td{
+                margin-left: 400px;
+                padding: 15px;
+                margin-top: 100px;
+                border: 1px solid black;
+            }
+
+            body{
+                background-color: #ffa64d;
+            }
+
+            h1{
+                margin-left: 550px;
+                margin-top: 200px;
+            }
+            </style>
+    </head>
+    <body>
+        <h1> KNOW YOUR DRIVE!</h1>
+        <!--
+            <form method="POST" class="sendloc">{% csrf_token %} 
+                    <input type="text" name="car_number">
+                    <button type="submit" class="sendloc">Search</button>
+                    </form>
+-->
+    <table>
+        <tr>
+            <td>Charge left</td>
+            <td>Distance traveled</td>
+            <td>Distance left to cover</td>
+            <td>Need more fuel?</td>
+        </tr>
+        <tr>
+            <td>20%</td>
+            <td>5km</td>
+            <td>10km</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+        <form action='helpcall' method='GET'>
+        <button class="button button4", button type='submit'>Help me!</button>
+        
+        </form>
+        
+    </body>
+</html>
